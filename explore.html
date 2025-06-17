@@ -15,7 +15,7 @@ permalink: /explore
                 'Imagery © <a href="https://mapbox.com">Mapbox</a>',
           mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3RhcGFyYW4iLCJhIjoiY21ic3Rkd3hoMG5nczJqcTB4eXRsaWk0cCJ9.jDvMxO_hNAjNBGu9Wum_zA';
 
-      var basemap = L.tileLayer(mbUrl, {id: 'mapbox/navigation-day-v1', tileSize = 512, zoomOffset: -1, attribution: mbAttr});
+      var basemap = L.tileLayer(mbUrl, {id: 'mapbox/navigation-day-v1', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
 
       var baseLayers = {
         "Basemap": basemap
