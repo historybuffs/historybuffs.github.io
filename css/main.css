@@ -70,3 +70,34 @@ ul.posts li {
 .has-dropdown:hover .dropdown {
   display: block;
 }
+
+/* 1. Hide the submenu by default */
+.has-dropdown .dropdown {
+  display: none;
+}
+
+/* 2. Position it as an overlay under its parent */
+.has-dropdown .dropdown {
+  position: absolute;
+  top: 100%;      /* right below the parent <li> */
+  left: 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  padding: 0.5em 0;
+  z-index: 10;    /* float above other content */
+}
+
+/* 3. Stack items vertically */
+.has-dropdown .dropdown li {
+  display: block;
+}
+
+/* 4. Show it on hover */
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+/* 5. Your compact padding (override earlier settings) */
+.has-dropdown .dropdown li a {
+  padding: 0.25em 0.5em;
+}
