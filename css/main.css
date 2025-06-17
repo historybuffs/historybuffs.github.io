@@ -42,63 +42,49 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-/* ONLY change display and positioning on the top-level items */
+
+/* Dropdown Styles */
 .main-menu > li {
-  display: inline-block;  
-  position: relative;
+    display: inline-block;  
+    position: relative;
 }
-
-/* ONLY show the little arrow on the parent link */
 .main-menu > li.has-dropdown > a::after {
-  content: " ▾";
-  font-size: 0.8em;
-  margin-left: 0.2em;
+    content: " ▾";
+    font-size: 0.8em;
+    margin-left: 0.2em;
 }
-
-/* ONLY touch links that live inside the actual dropdown list */
 .main-menu .dropdown a {
-  padding: 0.5em 1em;
-  white-space: nowrap;
-    
+    padding: 0.5em 1em;
+    white-space: nowrap;
 }
-
-/* hover-background for dropdown items */
 .main-menu .dropdown a:hover {
-  background: #f0f0f0;
+    background: #f0f0f0;
 }
-
-/* dropdown show/hide */
 .has-dropdown:hover .dropdown {
-  display: block;
+    display: block;
 }
-
-/* 1. Hide the submenu by default */
 .has-dropdown .dropdown {
-  display: none;
+    display: none;
 }
-
-/* 2. Position it as an overlay under its parent */
 .has-dropdown .dropdown {
-  position: absolute;
-  top: 100%;      /* right below the parent <li> */
-  right: 0;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  padding: 0.5em 0;
-  z-index: 10;    /* float above other content */
+    position: absolute;
+    top: 100%;      /* right below the parent <li> */
+    left: auto;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    padding: 0.5em 0;
+    z-index: 10;    /* float above other content */
 }
-
-/* 3. Stack items vertically */
 .has-dropdown .dropdown li {
-  display: block;
+    display: block;
 }
-
-/* 4. Show it on hover */
 .has-dropdown:hover .dropdown {
-  display: block;
+    display: block;
+}
+.has-dropdown .dropdown li a {
+    padding: 0.25em 0.5em;
+    text-align: right;
+    display: block;
 }
 
-/* 5. Your compact padding (override earlier settings)
-.has-dropdown .dropdown li a {
-  padding: 0.25em 0.5em;
-} */
