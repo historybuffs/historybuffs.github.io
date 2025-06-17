@@ -81,7 +81,7 @@ ul.posts li {
 .has-dropdown .dropdown {
   position: absolute;
   top: 100%;      /* right below the parent <li> */
-  left: 0;
+  right: 0;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   padding: 0.5em 0;
