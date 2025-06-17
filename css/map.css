@@ -11,6 +11,7 @@
 
 .map-grid .map {
   grid-column: 2;
+  position: relative;
 }
 
 #map {
