@@ -105,7 +105,7 @@ ul.posts li {
 }
 /* position the 5th card under the gap between columns 2 & 3 */
 .gallery-grid > .polaroid:nth-child(5) {
-  grid-column: 3;       /* third column track */
+  grid-column: 2;       /* third column track */
   justify-self: center;
 }
 .polaroid {
