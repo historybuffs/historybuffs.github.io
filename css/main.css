@@ -56,12 +56,8 @@ ul.posts li {
 
 /* ONLY touch links that live inside the actual dropdown list */
 .main-menu .dropdown a {
-  padding: 0.5em 1em;
+  padding: 0.25em 0.5em;
   white-space: nowrap;
-}
-
-.dropdown li a {
-    padding: 0.25em 0.53m;
 }
 
 /* hover-background for dropdown items */
