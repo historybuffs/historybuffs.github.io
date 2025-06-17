@@ -1,0 +1,13 @@
+.map-grid {
+  display: grid;
+  grid-template-columns: 25% 70%
+  justify-content: space-between;
+}
+
+.map-grid .filter {
+  grid-column: 1;
+}
+
+.map-grid .map {
+  grid-column: 2;
+}
