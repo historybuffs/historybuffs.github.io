@@ -1,7 +1,8 @@
 .map-grid {
   display: grid;
-  grid-template-columns: 25% 70%
-  justify-content: space-between;
+  grid-template-columns: 25% 70%;
+  column-gap: 5%;
+  align-items: start;
 }
 
 .map-grid .filter {
