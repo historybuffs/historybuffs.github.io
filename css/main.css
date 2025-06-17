@@ -69,22 +69,3 @@ ul.posts li {
 .has-dropdown:hover .dropdown {
   display: block;
 }
-/* 1. Hide by default */
-.has-dropdown .dropdown {
-  display: none;
-}
-
-/* 2. Reveal on hover */
-.has-dropdown:hover .dropdown {
-  display: block;
-}
-
-/* 3. Vertical stacking */
-.dropdown li {
-  display: block;
-}
-
-/* 4. Compact padding */
-.dropdown li a {
-  padding: 0.25em 0.5em;
-}
