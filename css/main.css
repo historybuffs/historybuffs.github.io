@@ -89,7 +89,7 @@ ul.posts li {
 }
 
 /* Images Styling */
-.gallery-row {
+.gallery {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 25px;             /* vertical gap between rows */
