@@ -6,7 +6,24 @@ permalink: /explore
   <div class="filter">
     hi
   </div>
+  
   <div class="map">
-    hi
+    <script>
+      const map = L.map("map").setView([39.8283, 98.5795], 17);
+      
+      var mbAttr = 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="https://mapbox.com">Mapbox</a>',
+          mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3RhcGFyYW4iLCJhIjoiY21ic3Rkd3hoMG5nczJqcTB4eXRsaWk0cCJ9.jDvMxO_hNAjNBGu9Wum_zA';
+
+      var basemap = L.tileLayer(mbUrl, {id: 'mapbox/navigation-day-v1', tileSize = 512, zoomOffset: -1, attribution: mbAttr});
+
+      var baseLayers = {
+        "Basemap": basemap
+      };
+      
+      L.control.layers(baseLayers).addTo(map);
+    </script>
   </div>
+  
 </div>
