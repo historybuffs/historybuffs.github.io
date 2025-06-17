@@ -89,26 +89,23 @@ ul.posts li {
 }
 
 /* Images Styling */
-.gallery-grid {
-  display: grid;
-  /* three columns, each exactly 30% of the container: */
-  grid-template-columns: 30% 30% 30%;
-  /* distribute the extra 10% remaining space as gaps: */
+.gallery-row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 25px;             /* vertical gap between rows */
+}
+/* Top row: push cards to left, center, right */
+.gallery-row.top {
   justify-content: space-between;
-  /* vertical spacing between rows: */
-  row-gap: 25px;
 }
-/* position the 4th card under the “gap” between columns 1 & 2 */
-.gallery-grid > .polaroid:nth-child(4) {
-  grid-column: 1;       /* first column track */
-  justify-self: center; /* centered under that gap */
+/* Bottom row: center the two cards with even space around them */
+.gallery-row.bottom {
+  justify-content: space-around;
 }
-/* position the 5th card under the gap between columns 2 & 3 */
-.gallery-grid > .polaroid:nth-child(5) {
-  grid-column: 2;       /* third column track */
-  justify-self: center;
-}
+/* Keep your card at 30% of the container */
 .polaroid {
+  flex: 0 0 30%;
+  box-sizing: border-box;       /* if you ever add padding/borders */
   background: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2),
               0 6px 20px rgba(0,0,0,0.19);
