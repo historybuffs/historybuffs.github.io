@@ -3,7 +3,7 @@ layout: map
 permalink: /explore
 ---
 <div>
-  <h1>Explore the </h1>
+  <h1>Explore the United States</h1>
 </div>
 <div>
   <p>Welcome to our web map! Here you can find the locations of every property listed on the National Park Service's 
@@ -31,12 +31,38 @@ permalink: /explore
       "Basemap": basemap
     };
   
+    // 1) Store your “home” view
+    const defaultCenter = [39.8283, -98.5795];
+    const defaultZoom   = 5;
+    
+    // 2) Create the map as before
     const map = L.map('map', {
-      center: [39.8283, -98.5795],
-      zoom: 4,
+      center: defaultCenter,
+      zoom: defaultZoom,
       layers: [ basemap ]
     });
     
+    // 3) Define a custom control
+    const ResetControl = L.Control.extend({
+      options: { position: 'topleft' },  // choose top-left / topright / etc.
+    
+      onAdd: function(map) {
+        const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        container.title = 'Reset map view';
+        container.innerHTML = '<a href="#" role="button" aria-label="Reset view">⟳</a>';
+    
+        L.DomEvent.on(container, 'click', L.DomEvent.stop)
+                  .on(container, 'click', () => {
+                    map.setView(defaultCenter, defaultZoom);
+                  });
+    
+        return container;
+      }
+    });
+    
+    // 4) Add it to the map
+    map.addControl(new ResetControl());
+
     L.control.layers(baseLayers).addTo(map);
   </script>
   
