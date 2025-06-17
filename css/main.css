@@ -23,7 +23,7 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-p, p ul li {
+p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
@@ -40,4 +40,39 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+.main-menu > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 1em;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;                     /* just below the parent <li> */
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  padding: 0.5em 0;
+}
+
+.dropdown li {
+  display: block;
+}
+.dropdown li a {
+  display: block;
+  padding: 0.5em 1em;
+  white-space: nowrap;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+.main-menu a {
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  color: #333;
+}
+.main-menu a:hover {
+  background: #f0f0f0;
 }
