@@ -59,6 +59,7 @@ ul.posts li {
 .main-menu .dropdown a {
   padding: 0.5em 1em;
   white-space: nowrap;
+    
 }
 
 /* hover-background for dropdown items */
@@ -97,7 +98,7 @@ ul.posts li {
   display: block;
 }
 
-/* 5. Your compact padding (override earlier settings) */
+/* 5. Your compact padding (override earlier settings)
 .has-dropdown .dropdown li a {
   padding: 0.25em 0.5em;
-}
+} */
