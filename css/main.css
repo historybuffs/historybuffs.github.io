@@ -41,38 +41,31 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+/* ONLY change display and positioning on the top-level items */
 .main-menu > li {
-    display: inline-block;
-    position: relative;
-    margin-right: 1em;
-}
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;                     /* just below the parent <li> */
-  left: 0;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  padding: 0.5em 0;
+  display: inline-block;  
+  position: relative;
 }
 
-.dropdown li {
-  display: block;
+/* ONLY show the little arrow on the parent link */
+.main-menu > li.has-dropdown > a::after {
+  content: " ▾";
+  font-size: 0.8em;
+  margin-left: 0.2em;
 }
-.dropdown li a {
-  display: block;
+
+/* ONLY touch links that live inside the actual dropdown list */
+.main-menu .dropdown a {
   padding: 0.5em 1em;
   white-space: nowrap;
 }
 
+/* hover-background for dropdown items */
+.main-menu .dropdown a:hover {
+  background: #f0f0f0;
+}
+
+/* dropdown show/hide */
 .has-dropdown:hover .dropdown {
   display: block;
-}
-.main-menu a {
-  text-decoration: none;
-  padding: 0.5em 0.75em;
-  color: #333;
-}
-.main-menu a:hover {
-  background: #f0f0f0;
 }
