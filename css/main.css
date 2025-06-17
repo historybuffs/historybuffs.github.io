@@ -85,5 +85,6 @@ ul.posts li {
 .has-dropdown .dropdown li a {
     text-align: right;
     display: block;
+    font-size: 14px;
 }
 
