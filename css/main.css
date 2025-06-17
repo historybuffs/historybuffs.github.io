@@ -60,6 +60,10 @@ ul.posts li {
   white-space: nowrap;
 }
 
+.dropdown li a {
+    padding: 0.25em 0.53m;
+}
+
 /* hover-background for dropdown items */
 .main-menu .dropdown a:hover {
   background: #f0f0f0;
