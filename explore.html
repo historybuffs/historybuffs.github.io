@@ -11,60 +11,15 @@ permalink: /explore
     by address and the names of the properties, create buffer zones around any location, and create routes between any
     two points (and add any stops along the way). Happy exploring!</p>
 </div>
-<div class="map-grid">
-  <div class="filter">
-    hi
-  </div>
-  
-  <div class="map" id="map"></div>
-  
-  <script>
-    
-    var mbAttr = 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-              '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-              'Imagery © <a href="https://mapbox.com">Mapbox</a>',
-        mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3RhcGFyYW4iLCJhIjoiY21ic3Rkd3hoMG5nczJqcTB4eXRsaWk0cCJ9.jDvMxO_hNAjNBGu9Wum_zA';
-  
-    var basemap = L.tileLayer(mbUrl, {id: 'mapbox/navigation-day-v1', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
-  
-    var baseLayers = {
-      "Basemap": basemap
-    };
-  
-    // 1) Store your “home” view
-    const defaultCenter = [39.8283, -98.5795];
-    const defaultZoom   = 5;
-    
-    // 2) Create the map as before
-    const map = L.map('map', {
-      center: defaultCenter,
-      zoom: defaultZoom,
-      layers: [ basemap ]
-    });
-    
-    // 3) Define a custom control
-    const ResetControl = L.Control.extend({
-      options: { position: 'topleft' },  // choose top-left / topright / etc.
-    
-      onAdd: function(map) {
-        const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
-        container.title = 'Reset map view';
-        container.innerHTML = '<a href="#" role="button" aria-label="Reset view">⟳</a>';
-    
-        L.DomEvent.on(container, 'click', L.DomEvent.stop)
-                  .on(container, 'click', () => {
-                    map.setView(defaultCenter, defaultZoom);
-                  });
-    
-        return container;
-      }
-    });
-    
-    // 4) Add it to the map
-    map.addControl(new ResetControl());
 
-    L.control.layers(baseLayers).addTo(map);
-  </script>
+<div class="embed-container">
+  <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="NRHP Locations" 
+    src="https://arcgis.com/apps/webappviewer/index.html?id=24b6d58fc6314481864e48d0784ecb25"></iframe>
+</div>
+
+
+  
+
   
 </div>
 
