@@ -9,11 +9,11 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
-    color: #c4d3cc;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    color: #c4d3cc;
 }
 a {
     text-decoration: none;
@@ -60,7 +60,7 @@ ul.posts li {
     white-space: nowrap;
 }
 .main-menu .dropdown a:hover {
-    background: #f0f0f0;
+    background: #c4d3cc;
 }
 .has-dropdown:hover .dropdown {
     display: block;
@@ -83,12 +83,12 @@ ul.posts li {
 }
 .has-dropdown:hover .dropdown {
     display: block;
-    background-color: #c4d3cc;
 }
 .has-dropdown .dropdown li a {
     text-align: right;
     display: block;
     font-size: 14px;
+    color: black;
 }
 
 /* Images Styling */
