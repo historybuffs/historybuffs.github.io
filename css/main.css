@@ -129,24 +129,15 @@ ul.posts li {
   position: relative;
   overflow: hidden;
 }
-/* Absolutely position the img, fill the wrapper, and crop as needed */
+/* Absolutely position the img, fill the wrapper, and contain the image */
 .polaroid .img-wrapper img {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* or “contain” if you don’t want cropping */
+  object-fit: contain;
 }
 .image-container {
   text-align: center;
   padding: 10px 20px;
-}
-.img-wrapper img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;      /* scale down to fit inside */
-  object-position: center;  /* center the letterboxed image */
-  background: #fff;         /* or whatever “fill” color you want behind it */
 }
