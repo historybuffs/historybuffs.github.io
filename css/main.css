@@ -25,6 +25,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.blue-link {
+    color: #c4d3cc;
+}
 h1 {
     font-size: 2.5em;
     font-family: "Merriweather", serif;
