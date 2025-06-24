@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
     /* background-color: #E5DCD1; */
-    background-image: url("/assets/oldpaper.jpg");
+    background-image: url("/oldpaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
