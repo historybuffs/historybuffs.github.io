@@ -105,7 +105,7 @@ ul.posts li {
 }
 /* Keep your card at 30% of the container */
 .polaroid {
-  flex: 0 0 30%;
+  flex: 0 0 20%;
   box-sizing: border-box;       /* if you ever add padding/borders */
   background: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2),
