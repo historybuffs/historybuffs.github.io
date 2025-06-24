@@ -98,7 +98,7 @@ ul.posts li {
 .gallery-row {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 25px;             /* vertical gap between rows */
+  margin-bottom: 25px;             /* vertical gap between rows */
 }
 /* Top row: push cards to left, center, right */
 .gallery-row.top {
