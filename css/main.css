@@ -1,11 +1,11 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background-color: #E5DCD1;
-    /* background-image: url("/oldpaper.jpg");
+    /* background-color: #E5DCD1; */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Old_paper7.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     font-family: "Open Sans", sans-serif;
 }
 nav ul, footer ul {
