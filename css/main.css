@@ -1,15 +1,16 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
-body {
-    width: 70%;
-    /* background-color: #E5DCD1; */
+html {
+    height: 100%;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Old_paper7.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     background-position: center;
+}
+body {
+    margin: 60px auto 0;
+    width: 70%;
+    /* background-color: #E5DCD1; */
+    min-height: 100%;
+    background: transparent;
     font-family: "Open Sans", sans-serif;
 }
 nav ul, footer ul {
