@@ -1,14 +1,13 @@
 html {
-    height: 100%;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Old_paper7.jpg");
-    background-repeat: no-repeat;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Old_paper7.jpg") 
+                      no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
 }
 body {
-    margin: 60px auto;
+    margin: 60px auto 0;
     width: 70%;
     /* background-color: #E5DCD1; */
+    min-height: 100vh;
     background: transparent;
     font-family: "Open Sans", sans-serif;
 }
