@@ -1,7 +1,7 @@
 html {
     height: 100%;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Old_paper7.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     background-position: center;
 }
