@@ -154,3 +154,6 @@ ul.posts li {
   text-align: center;
   padding: 10px 20px;
 }
+.image-container a {
+    font-size: 1.25em
+}
