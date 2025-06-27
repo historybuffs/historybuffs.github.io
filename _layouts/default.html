@@ -44,13 +44,19 @@
 				</ul>
 			</footer>
 			<script>
-				document.addEventListener('DOMContentLoaded', function() {
-					const current = window.location.pathname;       // e.g. "/maps/heatmap"
-					document.querySelectorAll('.main-menu > li').forEach(li => {
-			      			const link = li.querySelector('a');
-			      			if (link.getAttribute('href') === current ||
-			          			current.startsWith(link.getAttribute('href') + '/')) {
-			        			li.classList.add('active');
+			  	document.addEventListener('DOMContentLoaded', () => {
+			    		const current = window.location.pathname;  // e.g. "/stories/west"
+			    		const items = document.querySelectorAll(
+			      			'.main-menu > li, ' +
+			     			'.main-menu .dropdown > li'
+			    		);
+			    		items.forEach(li => {
+			      		const link = li.querySelector('a');
+			      		if (!link) return;
+			      		const href = link.getAttribute('href');
+			      		if (current === href || current.startsWith(href + '/')) {
+			        		li.classList.add('active');
+			        		link.setAttribute('aria-current', 'page');
 			      }
 			    });
 			  });
