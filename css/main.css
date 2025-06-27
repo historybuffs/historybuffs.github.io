@@ -30,8 +30,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
-a.blue-link {
-    color: #c4d3cc;
+nav ul li.active a {
+    background-color: #c4d3cc;
+    color: black;
 }
 h1 {
     font-size: 2.5em;
