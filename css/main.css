@@ -209,5 +209,6 @@ small {
 }
 .meet-grid-odd .about {
     grid-column: 1;
+    text-align: right;
 }
 
