@@ -184,3 +184,30 @@ small {
   bottom: 0;
   margin-bottom: -15px;
 }
+
+/* Meet the team styling */
+.meet-grid-even {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    column-gap: 5%;
+    align-items: start;
+}
+.meet-grid-odd {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    column-gap: 5%;
+    align-items: start;
+}
+.meet-grid-even .headshot {
+    grid-column: 1;
+}
+.meet-grid-even .about {
+    grid-column: 2;
+}
+.meet-grid-odd .headshot {
+    grid-column: 2;
+}
+.meet-grid-odd .about {
+    grid-column: 1;
+}
+
