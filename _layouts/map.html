@@ -47,5 +47,23 @@
         				<li><a href="https://www.nps.gov/getinvolved/donate.htm">Get Involved</li>
 				</ul>
 			</footer>
+			<script>
+			  	document.addEventListener('DOMContentLoaded', () => {
+			    		const current = window.location.pathname;  // e.g. "/stories/west"
+			    		const items = document.querySelectorAll(
+			      			'.main-menu > li, ' +
+			     			'.main-menu .dropdown > li'
+			    		);
+			    		items.forEach(li => {
+			      		const link = li.querySelector('a');
+			      		if (!link) return;
+			      		const href = link.getAttribute('href');
+			      		if (current === href || current.startsWith(href + '/')) {
+			        		li.classList.add('active');
+			        		link.setAttribute('aria-current', 'page');
+			      }
+			    });
+			  });
+			</script>
 		</body>
 	</html>
