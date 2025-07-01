@@ -198,7 +198,7 @@ small {
 }
 .video-embed {
     position: relative;
-    padding-bottom: 56.25%;
+    aspect-ratio: 16 / 9;
     height: 0;
     max-width: 40%;
     margin-bottom: 25px;
