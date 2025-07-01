@@ -198,10 +198,10 @@ small {
 }
 .video-embed {
     width: 100%;
-    max_width: 40%;
+    max-width: 40%;
     padding-bottom: 56.25%;
     height: 0;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
 }
 .video-embed iframe {
     position: absolute;
