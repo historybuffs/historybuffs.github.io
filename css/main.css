@@ -131,33 +131,33 @@ ul.posts li {
 }
 /* Keep your card at 30% of the container */
 .polaroid {
-  flex: 0 0 30%;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;       /* if you ever add padding/borders */
-  background: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2),
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;       /* if you ever add padding/borders */
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2),
               0 6px 20px rgba(0,0,0,0.19);
 }
 /* Wrap the img in a fixed-ratio box */
 .polaroid .img-wrapper {
-  width: 100%;
-  /* pick the ratio your placeholder uses; e.g. 3:2 → 66.667% */
-  padding-top: 66.667%;
-  position: relative;
-  overflow: hidden;
+    width: 100%;
+    /* pick the ratio your placeholder uses; e.g. 3:2 → 66.667% */
+    padding-top: 66.667%;
+    position: relative;
+    overflow: hidden;
 }
 /* Absolutely position the img, fill the wrapper, and contain the image */
 .polaroid .img-wrapper img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .image-container {
-  text-align: center;
-  padding: 10px 20px;
+    text-align: center;
+    padding: 10px 20px;
 }
 .image-container a {
     font-size: 1.25em
@@ -177,39 +177,42 @@ ul.posts li {
 }
 /* Embed styling */
 .embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  max-width: 100%;
-  margin-bottom: 25px;
-}
-.embed-container iframe, .embed-container object, .embed-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} 
-small {
-  position: absolute;
-  z-index: 40;
-  bottom: 0;
-  margin-bottom: -15px;
-}
-.video-embed {
-    width: 100%;
-    max-width: 40%;
+    position: relative;
     padding-bottom: 56.25%;
     height: 0;
-    margin: 0 auto 25px;
+    max-width: 100%;
+    margin-bottom: 25px;
 }
-.video-embed iframe {
+.embed-container iframe, .embed-container object, .embed-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+} 
+small {
+    position: absolute;
+    z-index: 40;
+    bottom: 0;
+    margin-bottom: -15px;
 }
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    max-width: 40%;
+    margin-bottom: 25px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video-embed iframe, .video-embed object, .video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
 
 /* Meet the team styling */
 .meet-grid-even {
